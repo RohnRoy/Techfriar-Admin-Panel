@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.sidebar {
+    width: 550px;
+    height: 100vh;
+    background-color: #1C2340;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-header .logo {
+    height: 40px; /* Adjust the height as needed */
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF6B6B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-size: 16px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-item a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item.has-submenu > a::after {
+    content: "▼";
+    font-size: 12px;
+}
+
+.submenu {
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+}
+
+.notification {
+    background-color: #FF6B6B;
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-size: 12px;
+}

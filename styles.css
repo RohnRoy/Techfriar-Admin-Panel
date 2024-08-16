@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.sidebar {
+    width: 18.313rem;
+    height: 63.688rem;
+    /* border: 1px solid rgb(175, 9, 159); */
+    background: #0F1738;
+    padding: 24px 27px 29px 32px;
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: space-between; */
+    /* align-items: center; */
+
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-header .logo {
+    width: 158.65px;
+    height: 30px;
+
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    /* Hide the menu toggle button by default */
+}
+
+.profile {
+    width: 229px;
+    height: 56px;
+    margin-top: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -25px;
+}
+
+.profile-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.profile-name {
+    font-size: 16px;
+}
+
+.menu {
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.menu-item {
+    width: 229px;
+    height: 44px;
+    padding: 8px;
+    /* margin-bottom: 10px; */
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.menu-item a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.menu-item .menu-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.submenu {
+    list-style: none;
+    padding-left: 30px;
+    display: none;
+}
+
+.sidebar-footer {
+    padding: 20px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    padding-left: 9px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    color: white;
+}
+
+.footer-item .menu-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.profile-footer {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+}
+
+.profile-footer .profile-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.profile-footer .profile-name {
+    font-size: 16px;
+    color: #fff;
+}
+
+.second-section {
+    background-color: #F8F9FF;
+    width: 423px;
+    padding: 26px 22px 40px 40px;
+
+}
+
+.name-head {
+    padding-top: 26px;
+}
+
+.document {
+    max-width: 343px;
+}
+
+.document-background {
+    position: relative;
+    margin-top: 40px;
+}
+
+.star {
+    position: absolute;
+    top: -26px;
+    left: 19px;
+}
+
+.document-text {
+    width: 162px;
+    position: absolute;
+    font-family: Inter;
+    top: 200px;
+    margin-left: 140px;
+}
+
+.decor {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.2px;
+    text-align: left;
+
+}
+
+.decor-date {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+}
+
+.line {
+    width: 295px;
+    position: relative;
+    color: black;
+    top: -100px;
+    padding-left: 25px;
+}
+
+.second-text {
+    width: 219px;
+    margin-left: 25px;
+    top: -80px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    position: relative;
+}
+
+.first-icon {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: -100px;
+}
+
+.statistics {
+    position: relative;
+    margin-top: -30px;
+}
+
+.chart {
+    position: absolute;
+    top: 385px;
+    left: 348px;
+}
+
+.status {
+    position: absolute;
+    height: 71px;
+    top: 424px;
+    left: 518.98px;
+}
+
+.mailbox-container {
+    width: 361px;
+    height: 155px;
+    top: 593px;
+    left: 333px;
+    margin-top: 25px;
+}
+
+.header {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.desc {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.legal-container {
+    margin-top: 60px;
+}
+
+.mail-info,
+.legal-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info-item img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+.info-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 2px;
+    margin-top: 25px;
+}
+
+.info-count {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+
+
+.third-section {
+    min-width: 45.25rem;
+    flex-basis: 45.25rem;
+    width: 100%;
+    padding: 26px 22px 40px 40px;
+    padding-block: 1.4rem 5.625rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2.5rem;
+    width: 644px;
+}
+
+/* Styles for the text heading Conatiner and its inside elements */
+.task-container-heading {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    font-family: 'Inter';
+
+    & h2 {
+        font-size: 1.375rem;
+        font-weight: 500;
+        color: rgba(30, 31, 33, 1);
+    }
+
+    & a {
+        /* font-size: 0.875rem; */
+        font-size: var(--font-size-14px);
+        color: rgba(81, 91, 174, 1);
+    }
+}
+
+
+/* .selectedButton {
+    position: relative;
+} */
+
+.selectedButton::after {
+    content: '';
+    position: absolute;
+    bottom: -80%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: rgba(15, 23, 56, 1);
+}
+
+.task-filters {
+    display: flex;
+    padding-block: 0.8rem;
+    gap: 25px;
+    border-bottom: 1px;
+    
+}
+.task-filters button{
+    border: 0;
+    outline: none;
+
+}
+.task-button{
+    text-decoration: underline;
+}
+
+.table-container {
+    border: 1px solid rgba(229, 233, 255, 1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border-top-right-radius: 0.5rem;
+    margin-top: 1.3215rem;
+}
+
+table {
+    /* border: 1px green solid; */
+    width: 100%;
+    padding: 0.2rem;
+    border-collapse: collapse;
+    /* border: 2px solid rgba(229, 233, 255, 1); */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+thead {
+    background-color: rgba(248, 249, 252, 1);
+    overflow: hidden;
+}
+
+th {
+    padding-block: 1.125rem;
+    padding-inline: 0.625rem 0;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(106, 106, 109, 1);
+}
+
+td {
+    padding: 0.5rem 0.625rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding-block: 1rem;
+    
+
+}
+
+/* To Style the button Which Show Status */
+.status-button {
+    padding: 0.25rem 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    width: max-content;
+    background-color: rgba(241, 241, 245, 1);
+    border: 1px solid rgba(206, 206, 209, 1);
+}
+
+.task-title {
+    font-family: 'Inter';
+    font-family: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 15rem;
+    display: inline-block;
+   
+}
+
+
+tr:not(:nth-of-type(1)) {
+    border: 1px solid rgba(229, 233, 255, 1);
+}
+
+
+/* For the Table Payment */
+.payment-history-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+
+
+
+
+@media(max-width:768px) {
+    #layout {
+        flex-direction: column;
+    }
+
+
+
+    #task-body td:not(.task-title) {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 0.1rem 1.2em;
+        font-size: 0.8725rem;
+        width: max-content;
+        font-weight: 500;
+        color: rgba(30, 31, 33, 1);
+    }
+
+
+
+
+    .task-title {
+        padding-block: 1rem;
+        width: 80%;
+        font-weight: 600;
+    }
+
+
+    #task-body td:nth-of-type(2)::before {
+        content: 'Category';
+        font-weight: 400;
+        color: rgba(106, 106, 109, 1);
+    }
+
+    #task-body td:nth-of-type(3)::before {
+        content: 'Due date';
+        font-weight: 400;
+        color: rgba(106, 106, 109, 1);
+    }
+
+    #task-body td:nth-of-type(4)::before {
+        content: 'Status';
+        font-weight: 400;
+        color: rgba(106, 106, 109, 1);
+    }
+
+    /* second Table Desigin */
+
+    #payment-table-body tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    #payment-table-body td {
+        width: max-content;
+    }
+
+    #payment-table-body td:nth-child(1) {
+        order: 1;
+        font-size: 1rem;
+        font-weight: 500;
+        width: 58%;
+    }
+
+    
+    #payment-table-body td:nth-child(2) {
+        position: absolute;
+        top: 35%;
+        padding-block: 1.6rem;
+    }
+
+
+    #payment-table-body td:nth-child(3) {
+        order: 2;
+        display: flex;
+        align-items: center;
+    }
+
+    #payment-table-body td:nth-child(3)::after {
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+    }
+
+
+    #payment-table-body td:nth-child(4) {
+        order: 4;
+        display: none;
+        flex-direction: column;
+        gap: 0.25rem;
+
+
+    }
+
+    #payment-table-body td:nth-child(4)::before {
+        content: 'Description';
+    }
+
+}
