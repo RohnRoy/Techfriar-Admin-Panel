@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -8,22 +9,30 @@
 .container {
     display: flex;
     width: 100%;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+}
+@media screen and (max-width:768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar-header{
+        display: none;
+
+    }
+    .menu{
+        display: none;
+    }
+    .sidebar-footer{
+        display: none;
+    }
 }
 
 .sidebar {
     width: 18.313rem;
     height: 63.688rem;
-    /* border: 1px solid rgb(175, 9, 159); */
     background: #0F1738;
     padding: 24px 27px 29px 32px;
     position: relative;
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: space-between; */
-    /* align-items: center; */
-
 }
 
 .sidebar-header {
